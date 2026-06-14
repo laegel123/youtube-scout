@@ -45,7 +45,10 @@
     {
       "step": 5,
       "name": "api-route",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-14T16:35:11+0900",
+      "summary": "분석 엔드포인트 src/app/api/analyze/route.ts(POST). 모든 외부 호출을 이 라우트(서버)에만 격리(CLAUDE.md CRITICAL). 흐름: body {input} 검증(없/빈→400, invalid JSON→400) → getApiKey() fail-fast(키 누락→500 {error:'YOUTUBE_API_KEY missing'}, fetchVideoById가 에러를 삼키는 video 경로 대비) → parseInput → video면 fetchVideoById 후 제목+상위태그3개로 검색어 생성·query면 그대로 → searchVideoIds(q,25)(0건→200 빈 결과) → 시드ID를 풀에 dedupe 포함 → fetchVideosByIds batch → scoreVideos로 순위·시드 rank 탐색 → recommendNext(ranked, seed?.metrics). AnalyzeResponse{seed:ScoredVideo|null,ranked,recommendations}. 키를 응답/로그 미노출(console 없음), env는 서비스 레이어에서만 접근. 빌드가 키에 비의존. AC build 성공(키 없이, /api/analyze ƒ 동적), lint 0, test 41 그대로 통과.",
+      "completed_at": "2026-06-14T16:38:02+0900"
     },
     {
       "step": 6,
