@@ -53,7 +53,10 @@
     {
       "step": 6,
       "name": "ui",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-14T16:39:03+0900",
+      "summary": "결과 화면 UI 구현. 컴포넌트 4종 모두 src/components/: AnalyzeForm.tsx(유일한 'use client', 입력창+예시칩 자동채움+분석버튼, useState로 input/loading/error/result 관리, fetch POST /api/analyze만 호출(외부 API 직접호출 없음), 결과 상태를 소유하므로 결과영역도 여기서 VideoCard→순위표→추천 순서로 조립, 빈 결과/에러/로딩 상태 처리), VideoCard.tsx(시드 제목·종합점수·'전체 N위/M'), RankingTable.tsx(#·제목·조회수·참여율·속도·종합점수 막대, 시드행 bg-indigo-50 하이라이트+'내 영상' 배지, viewCount 누락→조회수/속도 '비공개'·좋아요&댓글 모두 누락→참여율 '비공개'), Recommendations.tsx(pattern/evidence/suggestedTopic 카드 grid). page.tsx는 Server 셸(헤더+AnalyzeForm). globals.css에 base layer body(bg-gray-50). 선택 헬퍼 src/lib/format.ts(formatCount 12K/1.2M/3.4B·소수1자리, formatPercent)+TDD 테스트 6케이스. 무채색+indigo 포인트, 점수 progress bar. 클라이언트에서 YOUTUBE_API_KEY/services 미접근. AC: lint 0, build 성공(키 없이, / 정적·/api/analyze 동적), test 47개 통과(기존 41+신규 6).",
+      "completed_at": "2026-06-14T16:44:33+0900"
     }
   ],
   "created_at": "2026-06-14T15:43:10+0900"
