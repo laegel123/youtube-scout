@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# env (API 키 유출 방지)
+.env
+.env*.local
+
+# phase execution outputs
+phases/**/phase*-output.json
+phases/**/step*-output.json
