@@ -13,7 +13,10 @@
     {
       "step": 1,
       "name": "core-types",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-14T15:47:13+0900",
+      "summary": "도메인 타입 src/types/youtube.ts(RawVideo: id/title/channelTitle/publishedAt/tags + optional viewCount/likeCount/commentCount, ParsedInput 판별 유니온) + 순수 파서 src/lib/parseVideoId.ts(parseInput): youtu.be·watch?v=·shorts·embed URL과 단독 11자 ID→video, 그 외 텍스트→query(trim), 빈/공백→throw 'input is empty'. TDD로 테스트 선작성(15 케이스). 네트워크 의존 없음. AC build/test 모두 통과.",
+      "completed_at": "2026-06-14T15:48:30+0900"
     },
     {
       "step": 2,
