@@ -7,7 +7,8 @@
       "name": "project-setup",
       "status": "completed",
       "started_at": "2026-06-14T15:43:10+0900",
-      "summary": "Next.js 15.5 + TS(strict) + Tailwind v3 + Vitest 스캐폴드 완성. src/app(layout.tsx, page.tsx 플레이스홀더, globals.css @tailwind 디렉티브) + src/{components,lib,services,types}(.gitkeep). tsconfig(@/*→./src/*, strict:true), vitest.config.ts(node env, @/ alias, src/**/*.test.ts(x)), tailwind.config.ts, postcss.config.js, next.config.js, .eslintrc.json(next/core-web-vitals). scripts: dev/build/start/lint/test=vitest run --passWithNoTests. AC 4종(install/lint/build/test) 모두 exit 0."
+      "summary": "Next.js 15.5 + TS(strict) + Tailwind v3 + Vitest 스캐폴드 완성. src/app(layout.tsx, page.tsx 플레이스홀더, globals.css @tailwind 디렉티브) + src/{components,lib,services,types}(.gitkeep). tsconfig(@/*→./src/*, strict:true), vitest.config.ts(node env, @/ alias, src/**/*.test.ts(x)), tailwind.config.ts, postcss.config.js, next.config.js, .eslintrc.json(next/core-web-vitals). scripts: dev/build/start/lint/test=vitest run --passWithNoTests. AC 4종(install/lint/build/test) 모두 exit 0.",
+      "completed_at": "2026-06-14T15:47:13+0900"
     },
     {
       "step": 1,
