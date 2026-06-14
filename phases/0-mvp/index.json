@@ -2,12 +2,43 @@
   "project": "TubeScout",
   "phase": "0-mvp",
   "steps": [
-    { "step": 0, "name": "project-setup", "status": "pending" },
-    { "step": 1, "name": "core-types", "status": "pending" },
-    { "step": 2, "name": "score", "status": "pending" },
-    { "step": 3, "name": "recommend", "status": "pending" },
-    { "step": 4, "name": "youtube-service", "status": "pending" },
-    { "step": 5, "name": "api-route", "status": "pending" },
-    { "step": 6, "name": "ui", "status": "pending" }
-  ]
+    {
+      "step": 0,
+      "name": "project-setup",
+      "status": "completed",
+      "started_at": "2026-06-14T15:43:10+0900",
+      "summary": "Next.js 15.5 + TS(strict) + Tailwind v3 + Vitest 스캐폴드 완성. src/app(layout.tsx, page.tsx 플레이스홀더, globals.css @tailwind 디렉티브) + src/{components,lib,services,types}(.gitkeep). tsconfig(@/*→./src/*, strict:true), vitest.config.ts(node env, @/ alias, src/**/*.test.ts(x)), tailwind.config.ts, postcss.config.js, next.config.js, .eslintrc.json(next/core-web-vitals). scripts: dev/build/start/lint/test=vitest run --passWithNoTests. AC 4종(install/lint/build/test) 모두 exit 0."
+    },
+    {
+      "step": 1,
+      "name": "core-types",
+      "status": "pending"
+    },
+    {
+      "step": 2,
+      "name": "score",
+      "status": "pending"
+    },
+    {
+      "step": 3,
+      "name": "recommend",
+      "status": "pending"
+    },
+    {
+      "step": 4,
+      "name": "youtube-service",
+      "status": "pending"
+    },
+    {
+      "step": 5,
+      "name": "api-route",
+      "status": "pending"
+    },
+    {
+      "step": 6,
+      "name": "ui",
+      "status": "pending"
+    }
+  ],
+  "created_at": "2026-06-14T15:43:10+0900"
 }
