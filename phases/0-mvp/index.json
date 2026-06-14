@@ -29,12 +29,16 @@
     {
       "step": 3,
       "name": "recommend",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-14T15:55:26+0900",
+      "summary": "정량+텍스트 빈도 기반 추천 순수 함수 src/lib/recommend.ts(recommendNext). 상위 topN(기본5) 영상의 제목+태그를 유니코드 letter/number 기준 토큰화·소문자화, 한/영 stopword 제거, 1~2gram의 document frequency 집계(minDocFreq=min(2,N)). 정렬: freq desc·구문(2gram) 우선·길이·사전순. 토큰 겹침 제거로 서로 다른 주제 최대 3개 선택. Recommendation{pattern,evidence,suggestedTopic}: evidence는 '상위 N개 중 M개 제목·태그에 등장' + seed 있으면 상위 평균 참여율/조회속도 배수 비교. 빈 입력·패턴 없으면 []. LLM/네트워크 없음(ADR-005), 무거운 NLP 의존 없음. TDD로 테스트 10케이스 선작성(빈입력·빈도집계·topN경계·seed유무). AC test 통과(40개), lint·build 통과.",
+      "completed_at": "2026-06-14T16:28:37+0900"
     },
     {
       "step": 4,
       "name": "youtube-service",
-      "status": "pending"
+      "status": "pending",
+      "started_at": "2026-06-14T16:28:37+0900"
     },
     {
       "step": 5,
