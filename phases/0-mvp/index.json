@@ -40,7 +40,7 @@
       "status": "completed",
       "started_at": "2026-06-14T16:28:37+0900",
       "summary": "YouTube Data API v3 래퍼 src/services/youtube.ts(첫 줄 import 'server-only', server-only). getApiKey(env YOUTUBE_API_KEY 없으면 throw), fetchVideoById(실패/404/미존재→null), searchVideoIds(search.list part=snippet&type=video&q&maxResults 기본25, id.videoId만 수집, relatedToVideoId 미사용 ADR-003), fetchVideosByIds(videos.list part=snippet,statistics,contentDetails batch, 50개씩 청크 ADR-004). 통계 문자열→Number, 누락은 undefined 유지(0 미충전), tags 누락→[]. non-ok는 throw(fetchVideoById만 catch→null). 테스트: global.fetch mock happy-path 1개(검색→batch 파싱·undefined 보존·단일 batch·relatedToVideoId 부재) 선작성. vitest.config에 server-only→next compiled empty.js alias 추가(node resolver 미해결 대응). AC build·test 통과(41개), lint 통과.",
-      "completed_at": "2026-06-14T16:34:31+0900"
+      "completed_at": "2026-06-14T16:35:11+0900"
     },
     {
       "step": 5,
