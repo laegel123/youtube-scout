@@ -24,7 +24,7 @@
       "status": "completed",
       "started_at": "2026-06-14T15:48:44+0900",
       "summary": "정량 지표 점수화 순수 함수 src/lib/score.ts(deriveMetrics/scoreVideos). DEFAULT_WEIGHTS(views.20/likes.20/comments.15/engagement.25/velocity.20), VideoMetrics(ageDays=max(1,일수), engagement=(likes+comments)/max(1,views), velocity=views/ageDays), ScoredVideo. 지표별 min-max 정규화(max==min→0.5), null likes/comments는 모집단 제외+0.5 imputation, 전부 null 지표는 가중치 제거 후 잔여 비례 재정규화(합=1), 정렬 score desc·동점 views desc·rank 1부터. now 주입형(테스트 고정). TDD로 테스트 15케이스 선작성. 네트워크 의존 없음. AC test 통과(30개), build·lint 통과.",
-      "completed_at": "2026-06-14T15:54:37+0900"
+      "completed_at": "2026-06-14T15:55:26+0900"
     },
     {
       "step": 3,
